@@ -15,7 +15,7 @@ public class CYOADriver {
 			
 			CYOAObject story = new CYOAObject(name);
 			System.out.println(story.beginning());
-			System.out.println(story.scenario1());
+			System.out.print(story.scenario1());
 			
 			String choice1 = scan.next().toLowerCase();
 			
@@ -29,6 +29,7 @@ public class CYOADriver {
 			}
 			else if (choice1.equals("east")) {
 				System.out.println(story.east());
+				//this is where the scenario 2 should be handled
 				
 			}
 			else {
