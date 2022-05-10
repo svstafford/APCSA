@@ -11,7 +11,7 @@ public class CYOADriver {
 		while (con == true) {
 						
 			System.out.print("Hello, what is your name?: ");
-			String name = scan.nextLine();
+			String name = scan.next();
 			
 			CYOAObject story = new CYOAObject(name);
 			System.out.println(story.beginning());
@@ -19,8 +19,33 @@ public class CYOADriver {
 			
 			String choice1 = scan.next().toLowerCase();
 			
+			if(choice1.equals("north")) {
+				System.out.println(story.north());
+				
+			}
+			else if (choice1.equals("south")) {
+				System.out.println(story.south());
+				
+			}
+			else if (choice1.equals("east")) {
+				System.out.println(story.east());
+				
+			}
+			else {
+				System.out.println(story.west());
+				
+			}
 			
+			System.out.println("Would you like to try again? (q to quit, any button to continue)");
+			String keepGoing = scan.next().toLowerCase();
+			
+			if(keepGoing.equals("q")) {
+				con = false;
+			}
 		}
+		
+		System.out.println("Thanks for playing.");
+		
 	}
 
 }

@@ -28,4 +28,9 @@ public class CYOAObject {
 		return "You happen upon a wizard and he offers you 4 potions, red, orange, yellow, and green. "
 				+ "What potion do you choose?";
 	}
+
+	public String west() {
+		// TODO Auto-generated method stub
+		return "You drown";
+	}
 }
